@@ -14,6 +14,10 @@
 		64EC7C301DEA8174008538AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64EC7C2E1DEA8174008538AB /* LaunchScreen.storyboard */; };
 		64EC7C3B1DEA8174008538AB /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EC7C3A1DEA8174008538AB /* TicTacToeTests.swift */; };
 		64EC7C461DEA8174008538AB /* TicTacToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EC7C451DEA8174008538AB /* TicTacToeUITests.swift */; };
+		64EC7C561DEA964C008538AB /* o.png in Resources */ = {isa = PBXBuildFile; fileRef = 64EC7C531DEA964C008538AB /* o.png */; };
+		64EC7C571DEA964C008538AB /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64EC7C541DEA964C008538AB /* x.png */; };
+		64EC7C581DEA964C008538AB /* Board.png in Resources */ = {isa = PBXBuildFile; fileRef = 64EC7C551DEA964C008538AB /* Board.png */; };
+		64EC7C5A1DEA9851008538AB /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 64EC7C591DEA9851008538AB /* white.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		64EC7C411DEA8174008538AB /* TicTacToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64EC7C451DEA8174008538AB /* TicTacToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeUITests.swift; sourceTree = "<group>"; };
 		64EC7C471DEA8174008538AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64EC7C531DEA964C008538AB /* o.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = o.png; path = ../../o.png; sourceTree = "<group>"; };
+		64EC7C541DEA964C008538AB /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = x.png; path = ../../x.png; sourceTree = "<group>"; };
+		64EC7C551DEA964C008538AB /* Board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Board.png; path = ../../Board.png; sourceTree = "<group>"; };
+		64EC7C591DEA9851008538AB /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white.png; path = ../../white.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				64EC7C2C1DEA8174008538AB /* Assets.xcassets */,
 				64EC7C2E1DEA8174008538AB /* LaunchScreen.storyboard */,
 				64EC7C311DEA8174008538AB /* Info.plist */,
+				64EC7C531DEA964C008538AB /* o.png */,
+				64EC7C541DEA964C008538AB /* x.png */,
+				64EC7C551DEA964C008538AB /* Board.png */,
+				64EC7C591DEA9851008538AB /* white.png */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -193,6 +205,7 @@
 				TargetAttributes = {
 					64EC7C211DEA8173008538AB = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2MDQVQ8J6C;
 						ProvisioningStyle = Automatic;
 					};
 					64EC7C351DEA8174008538AB = {
@@ -232,9 +245,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64EC7C581DEA964C008538AB /* Board.png in Resources */,
 				64EC7C301DEA8174008538AB /* LaunchScreen.storyboard in Resources */,
 				64EC7C2D1DEA8174008538AB /* Assets.xcassets in Resources */,
+				64EC7C571DEA964C008538AB /* x.png in Resources */,
 				64EC7C2B1DEA8174008538AB /* Main.storyboard in Resources */,
+				64EC7C5A1DEA9851008538AB /* white.png in Resources */,
+				64EC7C561DEA964C008538AB /* o.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,11 +427,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2MDQVQ8J6C;
 				INFOPLIST_FILE = TicTacToe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sparta.TicTacToe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -422,11 +442,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2MDQVQ8J6C;
 				INFOPLIST_FILE = TicTacToe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sparta.TicTacToe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -503,6 +526,7 @@
 				64EC7C4C1DEA8174008538AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		64EC7C4D1DEA8174008538AB /* Build configuration list for PBXNativeTarget "TicTacToeTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +535,7 @@
 				64EC7C4F1DEA8174008538AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		64EC7C501DEA8174008538AB /* Build configuration list for PBXNativeTarget "TicTacToeUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +544,7 @@
 				64EC7C521DEA8174008538AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
